@@ -1,0 +1,29 @@
+<mvc:View
+  controllerName="sap.ui.app.wt.components.DDNinList"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  >
+  <List
+    id="ddninList"
+    class="sapUiResponsiveMargins"
+    width="auto"
+    items="{ddnin&gt;/ninjasSet}"
+    >
+    <headerToolbar>
+      <Toolbar>
+        <Title text="{i18n>ninjaListTitle}" ></Title>
+        <ToolbarSpacer></ToolbarSpacer>
+        <SearchField
+          width="50%"
+          search="onFilterNinjas"
+          selectOnFocus="false"
+          ></SearchField>
+      </Toolbar>
+    </headerToolbar>
+    <items>
+      <ObjectListItem
+        title="{ddnin&gt;Name}"
+        />
+    </items>
+  </List>
+</mvc:View>

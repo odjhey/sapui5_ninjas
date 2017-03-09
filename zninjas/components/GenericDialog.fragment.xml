@@ -1,0 +1,19 @@
+
+<core:FragmentDefinition
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core" >
+  <Dialog
+    id="wadapDialog"
+    title="Wadap bro {/ninja/name}"
+    >
+  
+    <beginButton>
+      <Button
+        text="sarado"
+        press="saramopo"
+        ></Button>
+    </beginButton>
+  
+  </Dialog>
+
+</core:FragmentDefinition>

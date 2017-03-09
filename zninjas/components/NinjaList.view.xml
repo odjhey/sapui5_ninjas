@@ -1,0 +1,29 @@
+<mvc:View
+  controllerName="sap.ui.app.wt.components.NinjaList"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  >
+  <List
+    id="ninjaList"
+    class="sapUiResponsiveMargins"
+    width="auto"
+    items="{ninjas>/Ninjas}"
+    >
+    <headerToolbar>
+      <Toolbar>
+        <Title text="{i18n&gt;staticNinTitle}" ></Title>
+        <ToolbarSpacer></ToolbarSpacer>
+        <SearchField
+          width="50%"
+          search="onFilterNinjas"
+          selectOnFocus="false"
+          ></SearchField>
+      </Toolbar>
+    </headerToolbar>
+    <items>
+      <ObjectListItem
+        title="{ninjas&gt;Name}"
+        />
+    </items>
+  </List>
+</mvc:View>

@@ -1,0 +1,17 @@
+{
+  "Ninjas" : [
+  
+    {
+      "Name" : "Kenshin",
+      "Age"  : 23,
+      "Status" : "Hiatus"
+    },
+    
+    {
+      "Name" : "Rantaro",
+      "Age"  : 50,
+      "Status" : "Active"
+    }
+
+  ]
+}

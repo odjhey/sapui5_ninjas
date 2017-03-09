@@ -1,0 +1,60 @@
+<mvc:View
+  controllerName = "sap.ui.app.wt.components.App"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc"
+  displayBlock="true"
+  >
+
+  <App>
+    <pages>
+      <Page title="{i18n>appTitle}">
+
+        <headerContent>
+          <Button icon="sap-icon://hello-world"
+           press="onDialogPress" />
+        </headerContent>
+
+        <content>
+          <Panel
+            headerText="{i18n>appDescription}"
+            class="sapUiResponsiveMargin"
+            width="auto"
+            >
+            <content>
+
+              <Button text="{i18n>showHelloButtonText}" press="onPressz"
+                class="sapUiSmallMarginEnd"
+                />
+
+              <Input
+                value="{/ninja/name}"
+                valueLiveUpdate="true"
+                width="30%"
+                />
+
+              <Text
+                text="ikillu {/ninja/name}"
+                class="sapUiSmallMargin"
+                />
+
+
+              <Button
+                text="Popup"
+                press="onDialogPress"
+                class="sapUiSmallMarginEnd"/>
+
+              <mvc:XMLView viewName="sap.ui.app.wt.components.NinjaList"/>
+              <mvc:XMLView viewName="sap.ui.app.wt.components.RemNinjaList"/>
+            </content>
+          </Panel>
+        </content>
+      </Page>
+    </pages>
+  </App>
+
+  <!--
+  <Text text="Hohhoho the aztig in you" />
+  -->
+
+
+</mvc:View>
