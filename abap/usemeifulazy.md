@@ -3,22 +3,6 @@
 
 ```abap
   METHOD ninjasset_create_entity.
-**TRY.
-*CALL METHOD SUPER->NINJASSET_CREATE_ENTITY
-*  EXPORTING
-*    IV_ENTITY_NAME          =
-*    IV_ENTITY_SET_NAME      =
-*    IV_SOURCE_NAME          =
-*    IT_KEY_TAB              =
-**    IO_TECH_REQUEST_CONTEXT =
-*    IT_NAVIGATION_PATH      =
-**    IO_DATA_PROVIDER        =
-**  IMPORTING
-**    ER_ENTITY               =
-*    .
-** CATCH /IWBEP/CX_MGW_BUSI_EXCEPTION .
-** CATCH /IWBEP/CX_MGW_TECH_EXCEPTION .
-**ENDTRY.
 
     DATA ls_req_payload LIKE er_entity.
     io_data_provider->read_entry_data(
@@ -52,27 +36,6 @@
 
 ```abap
   METHOD ninjasset_get_entityset.
-**TRY.
-*CALL METHOD SUPER->NINJASSET_GET_ENTITYSET
-*  EXPORTING
-*    IV_ENTITY_NAME           =
-*    IV_ENTITY_SET_NAME       =
-*    IV_SOURCE_NAME           =
-*    IT_FILTER_SELECT_OPTIONS =
-*    IS_PAGING                =
-*    IT_KEY_TAB               =
-*    IT_NAVIGATION_PATH       =
-*    IT_ORDER                 =
-*    IV_FILTER_STRING         =
-*    IV_SEARCH_STRING         =
-**    IO_TECH_REQUEST_CONTEXT  =
-**  IMPORTING
-**    ET_ENTITYSET             =
-**    ES_RESPONSE_CONTEXT      =
-*    .
-** CATCH /IWBEP/CX_MGW_BUSI_EXCEPTION .
-** CATCH /IWBEP/CX_MGW_TECH_EXCEPTION .
-**ENDTRY.
 
     DATA wa LIKE LINE OF et_entityset.
 
